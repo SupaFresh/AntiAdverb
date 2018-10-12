@@ -8,7 +8,7 @@ def main():
     while 1 == 1:
         reply = easygui.enterbox(msg='Enter a word \n Lowercase only!', title='Anti Adverb', strip=True)
         if reply in alist:
-            easygui.msgbox(msg=reply + " is an adverb!", title='Yes')
+            easygui.msgbox(msg=reply + " is an adverb!", title='Yes', image='images/yes.png')
 
         elif reply == "":
             print("Error: Nothing Entered")  # restarts loop
@@ -23,7 +23,7 @@ def main():
             sys.exit()
 
         else:
-            easygui.msgbox(msg=reply + " is NOT an adverb!", title='No')
+            easygui.msgbox(msg=reply + " is NOT an adverb!", title='No', image='images/no.png')
 
         print("Error: Unknown")
 
