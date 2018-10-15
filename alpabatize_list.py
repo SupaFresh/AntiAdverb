@@ -1,7 +1,8 @@
-from AntiAdverb.list import alist
+from list import alist
 
 '''
-Quick and dirty tool to alphabetize the manual alist and ensure uniqueness
+Quick and dirty tool to alphabetize the manual alist and ensure uniqueness.
+NOTE: Code won't work if list.py is open.
 '''
 
 
@@ -12,6 +13,7 @@ def main():
         for line in sorted(new_list):
             file.write("    '{}',\n".format(line))
         file.write("    ]\n")
+        print("Done")
 
 
 if __name__ == '__main__':
