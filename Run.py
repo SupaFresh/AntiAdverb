@@ -16,7 +16,7 @@ def main():
         elif reply == "AntiAdverb":
             easygui.msgbox(
                 msg="Anti Adverb is a creation of the great SupaFresh! \n "
-                    "Find me at https://github.com/SupaFresh \n Happy Writing! \n \n Version 0.7b Alpha \n 10/15/2018",
+                    "Find me at https://github.com/SupaFresh \n Happy Writing! \n \n Version 0.8 Beta \n 10/16/2018",
                 title="About Anti Adverb", ok_button="That's Nice")
 
         elif reply == "killdata":
