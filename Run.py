@@ -1,30 +1,47 @@
 import easygui
 import sys
+import os
 from list import alist
 
+forfun = os.getcwd()
 
 def main():
 
     while 1 == 1:
-        reply = easygui.enterbox(msg='Enter a word \n Lowercase only!', title='Anti Adverb', strip=True)
-        if reply in alist:
-            easygui.msgbox(msg=reply + " is an adverb!", title='Yes', image='images/yes.png')
+        try:
+            reply = easygui.enterbox(msg='Enter a word \n Lowercase only!', title='Anti Adverb', strip=True)
+        
+            if reply in alist:
+                easygui.msgbox(msg=reply + " is an adverb!", title='Yes', image='images/yes.png')
 
-        elif reply == "":
-            print("Error: Nothing Entered")  # restarts loop
+            elif reply == "":
+                print("Error: Nothing Entered")  # restarts loop
 
-        elif reply == "AntiAdverb":
-            easygui.msgbox(
-                msg="Anti Adverb is a creation of the great SupaFresh! \n "
-                    "Find me at https://github.com/SupaFresh \n Happy Writing! \n \n Version 0.8 Beta \n 10/16/2018",
-                title="About Anti Adverb", ok_button="That's Nice")
+            elif reply == "AntiAdverb":
+                easygui.msgbox(
+                    msg="Anti Adverb is a creation of the great SupaFresh! \n "
+                        "Find me at https://github.com/SupaFresh \n Happy Writing! \n \n Version 0.9 \n 10/25/2018",
+                    title="About Anti Adverb", ok_button="That's Nice")
 
-        elif reply == "killdata":
-            sys.exit()
+            elif reply == "killdata":
+                sys.exit() #closes program
+            
+            elif reply == "helptips":
+                filename = forfun + "\TipsAndTricks.txt"
+                f = open(filename, "r")
+                text = f.readlines()
+                f.close()
+                easygui.codebox(filename, "Tips and Tricks", text)
+            
+            elif reply == "easygui":
+                easygui.abouteasygui() #Checks easygui version
+            
 
-        else:
-            easygui.msgbox(msg=reply + " is NOT an adverb!", title='No', image='images/no.png')
+            else:
+                easygui.msgbox(msg=reply + " is NOT an adverb!", title='No', image='images/no.png')
 
+        except Exception: #Clicking cancel on enterbox exception/freezing
+            sys.exit(1) #solved by closing program silently on exception 
 
 
 if __name__ == '__main__':

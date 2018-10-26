@@ -1,0 +1,23 @@
+Hello! Welcome to the tips and tricks page!
+
+
+Tip #1: 
+	After you type in a word and get a msgbox
+	saying whether it's an adverb or not, you
+	can press the spacebar instead of the OK
+	button to close it.
+
+Tip #2:
+	Entering "killdata" will immeadiately
+	close the program.
+
+Tip #3:
+	Enter "helptips" to bring this page up.
+
+Tip #4:
+	Enter "easygui" to check the version of
+	your easygui package.
+	(Version 0.98.1 is guaranteed to work)
+
+Tip #5:
+	Enter AntiAdverb. Do it! You know you want to!
