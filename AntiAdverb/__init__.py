@@ -1,0 +1,1 @@
+self.maincode = maincode.py
