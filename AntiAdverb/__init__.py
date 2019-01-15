@@ -1,1 +1,1 @@
-self.maincode = maincode.py
+

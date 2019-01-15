@@ -1,6 +1,9 @@
 import compileall
-import AntiAdverb
+import AntiAdverb.maincode
+import AntiAdverb.alpabatize_list
 
 compileall.compile_dir('AntiAdverb/', force=True)
-AntiAdverb.maincode.run()
+AntiAdverb.alpabatize_list.main()
+AntiAdverb.maincode.pkg_check()
+AntiAdverb.maincode.main()
 
