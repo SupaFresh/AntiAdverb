@@ -2,17 +2,7 @@ import sys
 import os
 import subprocess
 from list import alist
-
-
-def install(package):
-    subprocess.call([sys.executable, "-m", "pip", "install", package])
-
-
-def pkg_check():
-    try:
-        import easygui
-    except ImportError:
-        install(easygui)
+import easygui
 
 
 def main():
@@ -30,7 +20,7 @@ def main():
             elif reply == "AntiAdverb":
                 easygui.msgbox(
                     msg="Anti Adverb is a creation of the great SupaFresh! \n "
-                        "Find me at https://github.com/SupaFresh \n Happy Writing! \n \n Version 0.9b \n 11/1/2018",
+                        "Find me at https://github.com/SupaFresh \n Happy Writing! \n \n Version 1.0 \n 11/1/2018",
                     title="About Anti Adverb", ok_button="That's Nice")
 
             elif reply == "killdata":
