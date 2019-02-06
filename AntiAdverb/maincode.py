@@ -9,7 +9,7 @@ def main():
     forfun = os.getcwd()
     while 1 == 1:
         try:
-            reply = easygui.enterbox(msg='Enter a word \n Lowercase only!', title='Anti Adverb', strip=True)
+            reply = easygui.enterbox(msg='Enter a word \nLowercase only!', title='Anti Adverb', strip=True)
 
             if reply in alist:
                 easygui.msgbox(msg=reply + " is an adverb!", title='Yes', image='images/yes.png')
